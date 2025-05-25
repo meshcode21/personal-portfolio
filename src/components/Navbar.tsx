@@ -2,19 +2,19 @@ import githubLogo from '../assets/github-mark/github-mark-white.svg';
 
 export default function Navbar() {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full h-20 flex items-center justify-center sticky top-0 z-50 backdrop-blur-xs"> 
       {/* Navbar container */}
 
-      <div className="w-11/12 h-15 m-auto flex items-center pl-2 pr-2 border-b-1 border-gray-300">
+      <div className="container px-2 h-full m-auto flex items-center border-b-1 border-gray-500/50">
         <div className="w-[20%] text-gray-500">
-          <div className="font-semibold flex items-center">
+          <div className="font-semibold flex items-center text-sky-600">
             <div className="text-5xl h-[35px] leading-[24px] ">&#123;</div>
-            <div className="text-2xl text-sky-600">MAHESH</div>
+            <div className="text-2xl text-white font-saira">MAHESH</div>
             <div className="text-5xl h-[35px] leading-[24px] ">&#125;</div>
           </div>
         </div>
 
-        <nav className="w-[60%] text-xl text-gray-700 font-semibold flex gap-5 justify-center items-center">
+        <nav className="w-[60%] text-xl font-semibold flex gap-5 justify-center items-center">
           <a href="#home" className="hover:border-b border-gray-600 px-1">
             Home
           </a>
@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="w-[20%]">
           <a
             href="#"
-            className="float-right bg-gray-700 text-white text-lg font-semibold rounded-xl flex items-center justify-center gap-2 px-4 py-2"
+            className="float-right text-gray-50 text-lg font-semibold border-2 border-gray-400 rounded-3xl flex items-center justify-center gap-2 px-4 py-2"
           >
             <img src={githubLogo} alt="GitHub" className="w-5 h-5" />
             <span>GitHub</span>
