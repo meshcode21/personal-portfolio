@@ -2,7 +2,7 @@ import githubLogo from '../assets/github-mark/github-mark-white.svg';
 
 export default function Navbar() {
   return (
-    <div className="w-full h-20 flex items-center justify-center sticky top-0 z-50 backdrop-blur-xs"> 
+    <div className={`w-full h-20 flex items-center justify-center sticky top-0 z-50 backdrop-blur-xs bg-black/30`}> 
       {/* Navbar container */}
 
       <div className="container px-2 h-full m-auto flex items-center border-b-1 border-gray-500/50">
