@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import githubLogo from "../assets/github-mark/github-mark-white.svg";
+import { Github, Menu, X } from "lucide-react";
+// import githubLogo from "../assets/github-mark/github-mark-white.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +39,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 border-2 border-gray-400 text-white px-4 py-2 rounded-full hover:border-white transition"
           >
-            <img src={githubLogo} alt="GitHub" className="w-5 h-5" />
+            <Github className="text-gray-400"/>
             <span>GitHub</span>
           </a>
         </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-gray-400 text-white px-4 py-2 rounded-full hover:border-white transition"
           >
-            <img src={githubLogo} alt="GitHub" className="w-5 h-5" />
+            <Github/>
             <span>GitHub</span>
           </a>
         </div>

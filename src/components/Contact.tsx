@@ -2,62 +2,54 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 bg-black text-white border-t border-gray-800"
+      className="py-20 bg-[#00060e] text-white border-t border-gray-800"
     >
-      <div className="container m-auto px-4 max-w-3xl">
-        <h2 className="text-3xl font-bold mb-10 text-center">Get in Touch</h2>
+      <div className="container mx-auto px-4 max-w-2xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+          Get in <span className="text-blue-500">Touch</span>
+        </h2>
 
-        <div className="space-y-5 text-center text-lg">
-          <p>You can reach me anytime through the platforms below:</p>
-
-          <div className="space-y-3">
-            <p>
-              <span className="font-semibold">Email:</span>{" "}
-              <a
-                href="mailto:maheshudas2077@gmail.com"
-                className="text-blue-400 underline hover:text-blue-300"
-              >
-                maheshudas2077@gmail.com
-              </a>
-            </p>
-
-            <p>
-              <span className="font-semibold">LinkedIn:</span>{" "}
-              <a
-                href="https://www.linkedin.com/in/mahesh-udas-a691b32b3"
-                className="text-blue-400 underline hover:text-blue-300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                linkedin.com/in/mahesh-udas
-              </a>
-            </p>
-
-            <p>
-              <span className="font-semibold">GitHub:</span>{" "}
-              <a
-                href="https://github.com/meshcode21"
-                className="text-blue-400 underline hover:text-blue-300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github.com/meshcode21
-              </a>
-            </p>
-
-            <p>
-              <span className="font-semibold">Twitter:</span>{" "}
-              <a
-                href="https://x.com/maheshudas10101"
-                className="text-blue-400 underline hover:text-blue-300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @maheshudas10101
-              </a>
-            </p>
+        <form className="space-y-6">
+          <div>
+            <label className="block mb-1 text-sm font-medium text-gray-300">
+              Your Name
+            </label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            />
           </div>
-        </div>
+
+          <div>
+            <label className="block mb-1 text-sm font-medium text-gray-300">
+              Your Email
+            </label>
+            <input
+              type="email"
+              placeholder="you@example.com"
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 text-sm font-medium text-gray-300">
+              Your Message
+            </label>
+            <textarea
+              placeholder="Write your message here..."
+              rows={5}
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );

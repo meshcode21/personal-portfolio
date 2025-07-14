@@ -1,21 +1,41 @@
+import maheshImage from "../assets/mahesh.png";
+
 export default function About() {
   return (
     <section
       id="about"
-      className="py-16 bg-black text-white border-t border-gray-800"
+      className="py-20 bg-gray-950 text-white border-t border-gray-800"
     >
-      <div className="container m-auto px-4 max-w-4xl">
-        <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-        <p className="text-lg leading-relaxed text-gray-300 text-justify">
-          I'm Mahesh Udas, a passionate Full Stack Developer who loves building
-          impactful and scalable web applications. I specialize in crafting both frontend
-          and backend systems using technologies like React, Node.js, MySQL, and Web3.
-          <br /><br />
-          I enjoy turning complex problems into simple, elegant solutions and constantly
-          strive to learn and improve. Whether it’s automating real-world tasks or
-          creating dynamic interfaces, I’m always excited to take on new challenges and
-          grow through hands-on experiences.
-        </p>
+      <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src={maheshImage}
+            alt="Mahesh Udas"
+            className="w-72 h-auto rounded-3xl border-2 border-gray-700 shadow-2xl"
+          />
+        </div>
+
+        {/* Text Section */}
+        <div className="w-full md:w-1/2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            About <span className="text-blue-500">Me</span>
+          </h2>
+
+          <p className="text-gray-300 text-lg mb-4">
+            Hello! I'm Mahesh Udas — a passionate full-stack web developer who
+            enjoys building scalable web applications and beautiful user
+            experiences. I'm skilled in the MERN stack, Tailwind CSS, and also
+            exploring the world of Web3.
+          </p>
+
+          <p className="text-gray-400">
+            I love working with both frontend and backend technologies and I’m
+            always eager to learn and contribute to impactful projects. Whether
+            it’s automating workflows or crafting user interfaces, I aim to
+            bring value to every line of code I write.
+          </p>
+        </div>
       </div>
     </section>
   );

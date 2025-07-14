@@ -1,47 +1,68 @@
 export default function Projects() {
+  const projects = [
+    {
+      name: "EDV Result Automation",
+      description:
+        "An automation system that helps studio owners easily check EDV results for their clients using web scraping. It significantly reduces manual effort and saves time during high-demand periods.",
+      github: "https://github.com/meshcode21/MESH-Automation-2.0-frontend",
+      demo:
+        "https://www.linkedin.com/posts/mahesh-udas-a691b32b3_webscraping-reactjs-nodejs-activity-7309213653956726784-YNh-",
+      tech: ["React", "Node.js", "Tailwind CSS"],
+    },
+  ];
+
   return (
     <section
       id="projects"
-      className="py-16 bg-gray-950 text-white border-t border-gray-800"
+      className="py-20 bg-gradient-to-b from-black to-gray-950 text-white border-t border-gray-800"
     >
-      <div className="container m-auto px-4">
-        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          My Projects
+        </h2>
 
-        <div className="bg-gray-900 p-6 rounded-xl border border-gray-700">
-          <h3 className="text-2xl font-semibold mb-2">
-            EDV Result Automation using Web Scraping
-          </h3>
-          <p className="text-gray-300 mb-4">
-            A powerful automation tool developed for a cyber to speed up
-            the process of checking Diversity Visa (EDV) results. This system eliminates
-            the manual effort of checking hundreds of entries individually, saving hours
-            of time and increasing productivity.
-          </p>
-
-          <div className="flex flex-wrap gap-3 text-sm mb-4">
-            <span className="bg-blue-600 px-3 py-1 rounded-full">React</span>
-            <span className="bg-green-600 px-3 py-1 rounded-full">Node.js</span>
-            <span className="bg-sky-600 px-3 py-1 rounded-full">Tailwind CSS</span>
-          </div>
-
-          <div className="flex gap-4">
-            <a
-              href="https://github.com/meshcode21/MESH-Automation-2.0-frontend"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 underline hover:text-blue-300"
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 shadow-md hover:shadow-blue-600/30 transition-shadow duration-300"
             >
-              GitHub Repo
-            </a>
-            <a
-              href="https://www.linkedin.com/posts/mahesh-udas-a691b32b3_webscraping-reactjs-nodejs-activity-7309213653956726784-YNh-"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 underline hover:text-blue-300"
-            >
-              Demo Video
-            </a>
-          </div>
+              <h3 className="text-xl font-semibold text-white mb-2">
+                {project.name}
+              </h3>
+              <p className="text-gray-300 mb-4">{project.description}</p>
+
+              <div className="mb-4 flex flex-wrap gap-2">
+                {project.tech.map((t, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 bg-blue-600 text-sm rounded-full text-white font-medium"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4 mt-2">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-full border border-gray-500 hover:border-white transition text-sm"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm transition"
+                >
+                  Demo Video
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
