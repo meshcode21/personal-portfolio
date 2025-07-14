@@ -1,19 +1,22 @@
+// src/App.tsx
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Technologies from "./components/Technologies";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <div className="bg-red-400 blur-2xl">ajhsefai</div> */}
-      <div className="w-full">
-        <div className="w-full h-20 bg-gray-950">
-          {/* web technologies which i do  */}
-        </div>
-      </div>
-      <Footer/>
+      <Technologies />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer /> 
     </>
   );
 }
