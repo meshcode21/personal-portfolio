@@ -21,13 +21,13 @@ export default function Hero() {
 
           <p className="mt-6 text-gray-300 text-lg max-w-xl">
             I love building full stack web apps using modern technologies like
-            React, Node.js, and Web3. Let’s connect and create something impactful.
+            React, Node.js, and TailwindCSS. Let’s connect and create something impactful.
           </p>
 
           <div className="mt-8 flex gap-4">
             <a
               href="#contact"
-              className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition duration-300 shadow-lg shadow-blue-500/30"
+              className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition duration-300 shadow-lg "
             >
               Contact Me
             </a>
