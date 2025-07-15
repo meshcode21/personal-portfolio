@@ -62,7 +62,7 @@ export default function Technologies() {
           Technologies I Work With
         </h2>
 
-        <div className="flex flex-wrap gap-6 justify-center">
+        <div className="flex flex-wrap gap-5 px-4 justify-center">
           {/* <Slider
             width="160px"
             duration={20}
@@ -75,7 +75,7 @@ export default function Technologies() {
 
             <div
               key={index}
-              className='px-4 py-2 mb-2 text-xl rounded-xl border border-gray-600 flex flex-col items-center gap-1'
+              className='px-4 py-2 text-xl rounded-xl border border-gray-600 flex flex-col items-center gap-1'
             >
               <div>
                 {React.cloneElement(skillData.logo, {
