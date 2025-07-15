@@ -43,7 +43,7 @@ export default function Hero() {
             <img
               src={heroPhoto}
               alt="Mahesh Udas"
-              className="m-auto rounded-full p-1 md:p-0 md:rounded-3xl size-70 md:size-auto md:h-auto object-cover object-top md:object-cover shadow-2xl border md:border-2 border-gray-700"
+              className="m-auto rounded-full p-1 md:p-0 md:rounded-3xl size-75 md:size-auto md:h-auto object-cover object-top md:object-cover shadow-2xl border md:border-2 border-gray-700"
             />
           </div>
 

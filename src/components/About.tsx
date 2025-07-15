@@ -1,4 +1,4 @@
-import maheshImage from "../assets/mahesh.png";
+import maheshImage from "../assets/aboutMePic.png";
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
           <img
             src={maheshImage}
             alt="Mahesh Udas"
-            className="w-72 h-auto rounded-3xl border-2 border-gray-700 shadow-2xl"
+            className="w-72 h-auto rounded-3xl border-2 p-1 border-gray-700 shadow-2xl"
           />
         </div>
 
